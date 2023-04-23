@@ -1,3 +1,8 @@
+---
+title: "3D Printing: My Contribution"
+date: 2023-04-23
+---
+
 OVERVIEW 
 
 In this project, we tackled a Google Code Jam problem related to generating ASCII art of punched cards with varying dimensions. The team gathered to discuss and devise an algorithmic solution for the problem. We then formed pairs and assigned each pair a programming language (Dart, Kotlin, Python, and TypeScript) to implement the solution. My partner and I were responsible for developing the TypeScript implementation.
