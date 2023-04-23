@@ -1,3 +1,8 @@
+---
+title: "3D Printing: My Contribution"
+date: 2023-04-23
+---
+
 # OVERVIEW
 
 This technical log provides a detailed account of our team's experience in solving a problem that involved finding a printable color for three printers with varying ink levels in their cartridges. It covers the problem's context and requirements, our team's proposed algorithmic solution, and the challenges we faced during implementation. The log concludes with lessons learned from the experience, emphasizing the importance of effective communication.
