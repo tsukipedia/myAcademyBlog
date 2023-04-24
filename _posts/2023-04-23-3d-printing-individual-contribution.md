@@ -5,7 +5,7 @@ date: 2023-04-23
 
 # OVERVIEW
 
-This technical log provides a detailed account of our team's experience in solving a problem that involved finding a printable color for three printers with varying ink levels in their cartridges. It covers the problem's context and requirements, our team's proposed algorithmic solution, and the challenges we faced during implementation. The log concludes with lessons learned from the experience, emphasizing the importance of effective communication.
+This technical log provides a detailed account my experience in solving a problem that involved finding a printable color for three printers with varying ink levels in their cartridges. It covers the problem's context and requirements, our team's proposed algorithmic solution, and the challenges we faced during implementation. The log concludes with lessons learned from the experience.
 
 # CONTEXT
 
@@ -19,18 +19,18 @@ As a team, we came up with an algorithm to solve the problem during a call where
 
 1. Initialize a variable for the test case counter.
 2. For each test case, do the following:
-  2.1. Read the ink levels for each of the three printers.
-  2.2. Find the minimum ink level for each color (CMYK) across the three printers.
-  2.3. Calculate the total ink level by summing the minimum ink levels for each color.
-    2.3.1. Check if the total ink level is 10^6:
-    2.3.2. If true, we have a valid result and no further calculations are needed.
-    2.3.3. If false, adjust the ink levels as needed to ensure their sum is equal to 10^6:
-      2.3.3.1. Calculate the difference between the total ink level and 10^6.
-      2.3.3.2. Iterate through the minimum ink levels array and do the following:
-      2.3.3.3. If the difference is greater than the current color ink level, subtract the color ink level from the difference and set the color ink level to 0.
-      2.3.3.4. If the difference is less than the current color ink level, subtract the difference from the color ink level and break the loop.
-    2.3.4. If it falls short, print "IMPOSSIBLE".
-  2.4. Print the adjusted ink levels for each color (CMYK).
+    1. Read the ink levels for each of the three printers.
+    2. Find the minimum ink level for each color (CMYK) across the three printers.
+    3. Calculate the total ink level by summing the minimum ink levels for each color.
+        1. Check if the total ink level is 10^6:
+        2. If true, we have a valid result and no further calculations are needed.
+        3. If false, adjust the ink levels as needed to ensure their sum is equal to 10^6:
+            1. Calculate the difference between the total ink level and 10^6.
+            2. Iterate through the minimum ink levels array and do the following:
+            3. If the difference is greater than the current color ink level, subtract the color ink level from the difference and set the color ink level to 0.
+            4. If the difference is less than the current color ink level, subtract the difference from the color ink level and break the loop.
+        4. If it falls short, print "IMPOSSIBLE".
+    4. Print the adjusted ink levels for each color (CMYK).
 
 I began implementing the discussed solution in Python and managed to make it work faster than anticipated. I shared the progress with my partner, and we both agreed it was complete. However, our teammates soon pointed out that we had mistakenly used Python instead of the required Dart language. Upon realizing the error, I quickly translated the Python code to Dart, and it appeared to function correctly. However, when running it in the Google Code Jam compiler, we encountered a runtime error.
 
