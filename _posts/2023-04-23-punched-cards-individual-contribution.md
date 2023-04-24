@@ -1,5 +1,5 @@
 ---
-title: "Punched Cards: My Contribution"
+title: "Punched Cards"
 date: 2023-04-23
 ---
 
