@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: A journey through my Encora Academy experience
 ---
 
 * About me
