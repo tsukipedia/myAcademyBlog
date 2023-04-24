@@ -1,5 +1,5 @@
 ---
-title: A journey through my Encora Academy experience
+title: An Encora Academy experience
 ---
 
 * About me
