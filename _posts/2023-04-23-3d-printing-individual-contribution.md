@@ -1,5 +1,5 @@
 ---
-title: "3D Printing: My Contribution"
+title: "3D Printing"
 date: 2023-04-23
 ---
 
