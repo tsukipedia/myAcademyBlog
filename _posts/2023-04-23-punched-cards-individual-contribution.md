@@ -13,7 +13,7 @@ The problem at hand requires us to create an ASCII art representation of punched
 
 The input consists of T, the number of test cases, followed by T lines, each containing two integers R and C representing the number of rows and columns of the punched card to be drawn. The output should begin with "Case #x:" where x is the test case number (starting from 1), followed by (2⋅ R)+1 lines displaying the ASCII art drawing of a punched card with R rows and C columns.
 
-![](punched-cards-img.png)
+![](../docs/assets/punched-cards-io.png)
 
 # SOLUTION
 
