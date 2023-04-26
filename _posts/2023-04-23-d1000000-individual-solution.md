@@ -8,6 +8,7 @@ In this document, we explore the problem of finding the longest straight that ca
 
 # CONTEXT
 This problem involves choosing dice from a collection of N dice, where the i-th die has Si sides showing integers 1 through Si. A straight of length ℓ starting at x is the list of integers x,x+1,…,x+(ℓ−1). The goal is to choose some of the dice (possibly all) and pick one number from each to form a straight. The problem asks for the longest straight that can be formed in this way. 
+
 Let's examine a test case to better understand this, for this test case we will consider 10 dice with the following number of sides 10 10 7 6 7 4 4 5 7 4, it is possible to form the straight 1,2,3,4,5,6,7,8,9 by discarding one d4 and using the d4⁠'s, d5, and d6 to get 1 through 4; the d7⁠'s to get 5 through 7; and the d10⁠'s to get 8 and 9. There is no way to form a straight of length 10, so this is the best that can be done.
 
 # SOLUTION

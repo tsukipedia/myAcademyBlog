@@ -9,7 +9,7 @@ For this exercise, we tackled a Google Code Jam problem related to generating AS
 
 # CONTEXT
 
-The problem at hand requires us to create an ASCII art representation of punched cards of varying sizes, as specified by input values R (rows) and C (columns). The punched cards resemble an R×C matrix without the top-left cell, resulting in a total of (R ⋅ C) - 1 cells. Each cell in the ASCII art is represented by a period (.) surrounded by dashes (-) above and below, pipes (|) to the left and right, and plus signs (+) for each corner. Adjacent cells share common characters in their borders, and periods (.) are used to align the cells in the top row.
+The problem at hand requires us to create an ASCII art representation of punched cards of varying sizes, as specified by input values R (rows) and C (columns). The punched cards resemble an R×C matrix without the top-left cell, resulting in a total of (R ⋅ C) - 1 cells. Each cell in the ASCII art is represented by a period (.) surrounded by dashes (-) above and below, pipes (\|) to the left and right, and plus signs (+) for each corner. Adjacent cells share common characters in their borders, and periods (.) are used to align the cells in the top row.
 
 The input consists of T, the number of test cases, followed by T lines, each containing two integers R and C representing the number of rows and columns of the punched card to be drawn. The output should begin with "Case #x:" where x is the test case number (starting from 1), followed by (2⋅ R)+1 lines displaying the ASCII art drawing of a punched card with R rows and C columns.
 
@@ -29,7 +29,7 @@ As a team, we came up with an algorithm to solve the problem during a call where
         3. Append a newline character to the ASCII art.
     4. Construct the row with periods and pipes:
         1. Append "." to the ASCII art.
-        2. Repeat ".|" C times and append it to the ASCII art.
+        2. Repeat ".\|" C times and append it to the ASCII art.
         3. Append a newline character to the ASCII art.
     5. Construct the row with plus signs, dashes, and pipes:
         1. Append "+-" to the ASCII art.

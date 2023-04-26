@@ -16,7 +16,7 @@ For each test case, output one line containing Case #x:y, where x is the test ca
 # SOLUTION
 To solve this problem, we need to represent each machine as a tree node, where each node stores its fun factor and a list of its children. We can then model the entire chain of machines as a collection of these tree nodes. The key is to implement a depth-first search (DFS) algorithm that calculates the sum of fun factors for each chain reaction initiated by Wile. Starting at each initiator (nodes pointing to the abyss), the DFS algorithm traverses through the children, seeking the chain with the lowest fun factor value. This chain should be triggered first, as it maximizes the fun Wile can obtain. The process is repeated for each initiator, selecting the optimal order in which to trigger them. The overall fun Wile gets from the session is the sum of the fun from each chain reaction, ensuring that the initiators are triggered in the best possible order to achieve maximum fun.
 
-My partner and I solved this problem in python, the first approach. I must admit that my partner Adrian did it all by himself, my only job was to understand his solution to write this technical log.
+My partner and I solved this problem in python (the first approach). I must admit that my partner Adrian did it all by himself, my only job was to understand his solution to write this technical log.
 
 Let's break down the code:
 
