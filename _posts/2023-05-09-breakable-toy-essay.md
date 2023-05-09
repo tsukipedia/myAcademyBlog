@@ -1,5 +1,5 @@
 ---
-title: Weekly Essay: Breakable toy
+title: Weekly Essay - Breakable toy
 date: 2023-05-09
 ---
 
