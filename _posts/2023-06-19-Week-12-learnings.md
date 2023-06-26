@@ -1,5 +1,6 @@
 ---
-title: Week 12 Essay 
+category: Essays
+title: Week 12
 date: 2023-06-19
 ---
 

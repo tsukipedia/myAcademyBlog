@@ -1,5 +1,6 @@
 ---
-title: Week 7 Essay 
+category: Essays
+title: Week 7
 date: 2023-05-12
 ---
 

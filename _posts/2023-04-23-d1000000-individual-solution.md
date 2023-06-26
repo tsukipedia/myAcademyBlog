@@ -1,4 +1,5 @@
 ---
+category: Logs
 title: D1000000
 date: 2023-04-24
 ---

@@ -1,5 +1,6 @@
 ---
-title: Weekly Essay - Breakable toy
+category: Essays
+title: Week 6
 date: 2023-05-09
 ---
 

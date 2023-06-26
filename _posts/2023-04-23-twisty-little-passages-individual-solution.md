@@ -1,4 +1,5 @@
 ---
+category: Logs
 title: Twisty Little Passages
 date: 2023-04-26
 ---

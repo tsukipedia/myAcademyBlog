@@ -1,5 +1,6 @@
 ---
-title: Week 11 Essay 
+category: Essays
+title: Week 11 
 date: 2023-06-12
 ---
 

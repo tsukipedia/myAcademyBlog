@@ -1,5 +1,6 @@
 ---
-title:  Takeaways of the "week" Essay
+category: Essays
+title:  Week 4 & 6
 date: 2023-04-26
 ---
 

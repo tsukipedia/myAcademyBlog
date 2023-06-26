@@ -1,5 +1,6 @@
 ---
-title: Week 10 Essay 
+category: Essays
+title: Week 10
 date: 2023-06-05
 ---
 

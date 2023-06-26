@@ -1,4 +1,5 @@
 ---
+category: Logs
 title: "3D Printing"
 date: 2023-04-23
 ---

@@ -1,5 +1,6 @@
 ---
-title: Week 9 Essay 
+category: Essays
+title: Week 9 
 date: 2023-05-30
 ---
 

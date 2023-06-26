@@ -1,5 +1,6 @@
 ---
-title: Week 8 Essay 
+category: Essays
+title: Week 8
 date: 2023-05-19
 ---
 

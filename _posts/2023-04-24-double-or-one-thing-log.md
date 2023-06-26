@@ -1,4 +1,5 @@
 ---
+category: Logs
 title: Double or One Thing
 date: 2023-04-24
 ---
