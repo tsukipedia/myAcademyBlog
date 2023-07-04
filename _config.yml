@@ -1,14 +1,3 @@
 theme: minima
 title: My Learning Process
 author: Salma Rubi Wabi
-baseurl: '/myAcademyBlog'
-
-defaults:
-  - scope:
-      path: "_posts/essays"
-    values:
-      type: "Weekly Essays"
-  - scope:
-      path: "_posts/logs"
-    values:
-      type: "Technical Logs"
