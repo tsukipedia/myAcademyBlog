@@ -1,11 +1,11 @@
 ---
 category: Logs
-title: Hyperskill: Music Advisor
+title: Hyperskill - Music Advisor
 date: 2023-07-03
 ---
 
 # OVERVIEW
-The project involves developing a command line Java application that interacts with the Spotify API to offer music-related functionalities. The application allows users to register using third-party services and provides information based on user requests. The project progresses through several stages, starting with implementing basic functionality to read user input and provide information. Subsequent stages focus on adding authentication using OAuth, incorporating a simple HTTP server, making actual API requests, and implementing paginated output. The application follows the Model-View-Controller (MVC) pattern and allows users to navigate through pages and customize the number of entries per page.
+The project involves developing a command line Java application that interacts with the Spotify API to offer music-related functionalities. The application allows users to register using third-party services and provides information based on user requests. The project progresses through several stages, starting with implementing basic functionality to read user input and provide information. Subsequent stages focus on adding authentication using OAuth, incorporating a simple HTTP server, making API requests, and implementing paginated output. The application follows the Model-View-Controller (MVC) pattern and allows users customize API URLs and the number of entries per page.
 
 # CONTEXT
 The problem this project addresses is the need for a streamlined and interactive application for users to explore music content from Spotify without having to navigate through Spotify's application or website.
@@ -49,7 +49,7 @@ This command passes the maximum number of elements per page.
 - `auth`: Prints the auth link and allow us to use another any other command.
 ```
 > auth
-https://accounts.spotify.com/authorize?client_id=6623a7ef869f41fc9bbd028c510bfe14&redirect_uri=http://localhost:8080&response_type=code
+https://accounts.spotify.com/authorize?client_id=1234&redirect_uri=http://localhost:8080&response_type=code
 waiting for code...
 code received
 making http request for access_token...
@@ -782,6 +782,21 @@ public abstract class PaginatedContent {
 
 }
 ```
+The user can change the page using `prev` and `next` commands, they are received in the `InputReader` class. Here we use any implementation of our `PaginatedContent` interface to perform the change of page calling the function `changePage()`, this updates the current page and the index of the first element of our current page, then we can query the API with the updated values to receive a new page of content.
+
+``` java
+    case "prev" -> {
+        apiCaller.changePage("prev");
+        content = apiCaller.fetchPage(accessToken);
+        printer.printContent(content);
+    }
+    case "next" -> {
+        apiCaller.changePage("next");
+        content = apiCaller.fetchPage(accessToken);
+        printer.printContent(content);
+    }
+```
+Here, the generalization of the `Printer` implementation assigned for the fetching commands is also useful to print in the required format for each content type.
 
 # ALTERNATIVE SOLUTIONS
 
@@ -841,5 +856,10 @@ I would have liked to have something like this:
     }
 ```
 
+Another thing I would have liked to do is to refactor the step 2 (Do API call) into a private function to avoid repeating that code segment in every API call method.
+
 ### Get Playlist by Category
 I originally intended to have a method called updateCategories() that fetched all categories from the spotify API and a method called getCategories() that fetched a list of paginated categories, but because pagination wasn't working correctly in the mocked API used in the Hyperskill's tests, both of the methods ended up being practically the same and it looks weird in my code :c
+
+## Extra
+I think I got way too excited when learning about `static` methods and variables and used them way too much in this code, if I had to re-write it I would try to use the static keyword less.
