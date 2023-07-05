@@ -1,7 +1,7 @@
 ---
 category: Essays
 title: Week 13 & 14
-date: 2023-06-19
+date: 2023-07-04
 ---
 
 Over the past two weeks at Encora, my exploration with Java’s object-oriented concepts has been exhilarating, especially as I could exercise my newfound knowledge through the Music Advisor project. A surprising revelation was the existence of anonymous functions and classes in Java, a concept I was familiar with through lambda functions in JavaScript/TypeScript. Their applicability in an object-oriented program seems limited, but just knowing they exist in Java is empowering, I'm certain they'll find their way into my future codes.
