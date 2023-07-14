@@ -1,6 +1,6 @@
 ---
 category: Logs
-title: Open Source Software - OpenRefine
+title: Open Source Software - OpenRefine PR 1
 date: 2023-07-06
 ---
 
@@ -23,11 +23,11 @@ To address this issue, I implemented a solution that ensured the reconciliation 
 
 Since this project was entirely new to me, I started by watching tutorials on how to use the product in order to understand its functionality. Additionally, I familiarized myself with the developer guide, which provided instructions for installing, running, and testing the project. Once I gained a general understanding of the product's purpose, I began looking for an issue labeled 'good first issue' from the project's Git repository.
 
-![](/docs/assets/openrefine0.png)
+![](../docs/assets/openrefine0.png)
 
 During my investigation of the issue, I conducted multiple searches in the project's file explorer, trying different strings. After several attempts, I struck gold when I searched for the `standardServices` array. This search yielded a manageable number of results, including the file I was looking for: `recon-manager.js`.
 
-![](/docs/assets/openrefine1.png)
+![](../docs/assets/openrefine1.png)
 
 Upon examining this file, I discovered a function called `registerStandardService`, which seemed to be responsible for adding reconciliation services without validating if the service URL was already registered. To confirm my hypothesis, I added a `console.log("<3")` statement inside the function and reproduced the issue. It was immensely satisfying to finally see that heart symbol printed in the browser's console.
 
@@ -53,4 +53,9 @@ ReconciliationManager.registerStandardService = function(url, f, silent) {
 };
 ```
 
-Lastly, since the problem required displaying a message in the graphical user interface (GUI), I made sure to add the message to all the corresponding translation files.
+Since the problem required displaying a message in the graphical user interface (GUI), I made sure to add the message to all the corresponding translation files.
+
+Once I had the solution, I submitted a PR with my solution and got some requests to change the error message, to remove the automated translations I added, and to implement the callback function that should be called on errors.
+
+![](/docs/assets/openrefine2.png)
+
