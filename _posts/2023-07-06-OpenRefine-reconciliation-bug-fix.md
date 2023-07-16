@@ -40,6 +40,7 @@ ReconciliationManager.registerStandardService = function(url, f, silent) {
 +    if (!silent) {
 +      alert($.i18n('core-recon/url-already-registered'));
 +    }
++    if (f) { f(url); }
 +    return;
 +  }
 
@@ -47,7 +48,7 @@ ReconciliationManager.registerStandardService = function(url, f, silent) {
   if (!silent) {
     dismissBusy =  DialogSystem.showBusy($.i18n('core-recon/contact-service')+"...");
   }
-
+  
   // ...
 
 };
